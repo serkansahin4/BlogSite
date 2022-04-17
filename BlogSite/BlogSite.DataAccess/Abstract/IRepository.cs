@@ -11,8 +11,8 @@ namespace BlogSite.DataAccess.Abstract
     {
         Task<List<T>> GetAllAsync(Expression<Func<T,bool>> filter=null);
         Task<T> GetAsync(Expression<Func<T, bool>> filter);
-        void InsertAsync(T entity);
-        void DeleteAsync(T entity);
-        void UpdateAsync(T entity);
+        Task InsertAsync(T entity);
+        Task DeleteAsync(T entity);
+        Task UpdateAsync(T entity);
     }
 }

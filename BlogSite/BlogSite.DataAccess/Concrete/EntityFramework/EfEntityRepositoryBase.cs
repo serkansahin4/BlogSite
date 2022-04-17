@@ -19,13 +19,13 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework
             _dbSet = _context.Set<TEntity>();
         }
 
-        public async void InsertAsync(TEntity entity)
+        public async Task InsertAsync(TEntity entity)
         {
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async void DeleteAsync(TEntity entity)
+        public async Task DeleteAsync(TEntity entity)
         {
             _dbSet.Remove(entity);
             await _context.SaveChangesAsync();
@@ -41,7 +41,7 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework
             return await _dbSet.SingleOrDefaultAsync(filter);
         }
 
-        public async void UpdateAsync(TEntity entity)
+        public async Task UpdateAsync(TEntity entity)
         {
              _dbSet.Update(entity);
             await _context.SaveChangesAsync();

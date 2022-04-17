@@ -9,10 +9,11 @@ namespace BlogSite.Business.Abstract
 {
     public interface ICategoryService
     {
-        void Add(Category category);
-        void Delete(Category category);
-        void Update(Category category);
-        Task<List<Category>> GetList();
-        Task<Category> GetById(int id);
+        Task AddAsync(Category category);
+        Task DeleteAsync(Category category);
+        Task DeleteAsync(int id);
+        Task UpdateAsync(Category category);
+        Task<List<Category>> GetListAsync();
+        Task<Category> GetByIdAsync(int id);
     }
 }

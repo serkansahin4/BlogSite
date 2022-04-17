@@ -16,29 +16,35 @@ namespace BlogSite.Business.Concrete
         {
             _categoryDal = categoryDal;
         }
-        public void Add(Category category)
+        public async Task AddAsync(Category category)
         {
-            throw new NotImplementedException();
+            await _categoryDal.InsertAsync(category);
         }
 
-        public void Delete(Category category)
+        public async Task DeleteAsync(Category category)
         {
-            throw new NotImplementedException();
+            await _categoryDal.DeleteAsync(category);
         }
 
-        public Task<Category> GetById(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            Category category = await GetByIdAsync(id);
+            await _categoryDal.DeleteAsync(category);
         }
 
-        public Task<List<Category>> GetList()
+        public async Task<Category> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _categoryDal.GetAsync(x => x.Id == id);
         }
 
-        public void Update(Category category)
+        public async Task<List<Category>> GetListAsync()
         {
-            throw new NotImplementedException();
+            return await _categoryDal.GetAllAsync();
+        }
+
+        public async Task UpdateAsync(Category category)
+        {
+            await _categoryDal.UpdateAsync(category);
         }
     }
 }

@@ -16,5 +16,7 @@ namespace BlogSite.Entities.Concrete
         public string CommentTitle { get; set; }
         public DateTime CreatedDate { get; set; }
         public bool Status { get; set; }
+        public int BlogId { get; set; }
+        public Blog Blog { get; set; }
     }
 }

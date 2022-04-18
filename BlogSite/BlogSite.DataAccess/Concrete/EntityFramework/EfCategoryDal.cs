@@ -15,5 +15,7 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework
         {
             
         }
+
+        
     }
 }

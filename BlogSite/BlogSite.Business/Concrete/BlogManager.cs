@@ -44,6 +44,13 @@ namespace BlogSite.Business.Concrete
             return await _blogDal.GetAllAsync();
         }
 
+      
+
+        public async Task<List<Blog>> GetListWithCategoryAsync()
+        {
+            return await _blogDal.GetListWithCategoryAsync();
+        }
+
         public async Task UpdateAsync(Blog blog)
         {
             await _blogDal.UpdateAsync(blog);

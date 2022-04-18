@@ -14,9 +14,14 @@ namespace BlogSite.WebUI.Controllers
         {
             _blogService = blogService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return View(await _blogService.GetListWithCategoryAsync());
+        }
+
+        public async Task<IActionResult> Details(int id) //Blog Read All
+        {
+            return View(await _blogService.GetByIdAsync(id));
         }
     }
 }

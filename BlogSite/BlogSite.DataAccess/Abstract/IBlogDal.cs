@@ -9,5 +9,6 @@ namespace BlogSite.DataAccess.Abstract
 {
     public interface IBlogDal:IRepository<Blog>
     {
+        Task<List<Blog>> GetListWithCategoryAsync();
     }
 }

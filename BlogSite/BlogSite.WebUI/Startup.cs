@@ -34,6 +34,9 @@ namespace BlogSite.WebUI
             services.AddTransient<ICategoryService, CategoryManager>();
             services.AddTransient<ICategoryDal, EfCategoryDal>();
 
+            services.AddTransient<ICommentDal, EfCommentDal>();
+            services.AddTransient<ICommentService, CommentManager>();
+
             services.AddTransient<IBlogService, BlogManager>();
             services.AddTransient<IBlogDal, EfBlogDal>();
 

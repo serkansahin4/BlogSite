@@ -23,6 +23,7 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework
         {
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
+            
         }
 
         public async Task DeleteAsync(TEntity entity)

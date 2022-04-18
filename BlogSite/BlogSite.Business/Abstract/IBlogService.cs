@@ -14,6 +14,8 @@ namespace BlogSite.Business.Abstract
         Task DeleteAsync(int id);
         Task UpdateAsync(Blog blog);
         Task<List<Blog>> GetListAsync();
+        Task<List<Blog>> GetListWithCategoryAsync();
+        
         Task<Blog> GetByIdAsync(int id);
     }
 }

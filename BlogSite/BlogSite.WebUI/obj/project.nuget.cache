@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2BLm5cV/o6DBb5hdROAgJgNh1zWb+pVS85ryGJiJlcwKq+EkDBRHkuZ8JosDI0+SWWg8zqvwcNgETygeufIi9A==",
+  "dgSpecHash": "2HaNdIMVB+NfbqlNAQQZJoPlQNGKJ6H/dS4yyzdjqvh4oqfeGZP5XmzP3JqbHlNoP7davPw1kuD86nVndJo0fA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Serkan\\Desktop\\GİTHUB REPOLARIM\\BlogSitesi\\BlogSite\\BlogSite.WebUI\\BlogSite.WebUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Serkan\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\Serkan\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\Serkan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\Serkan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Serkan\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Serkan\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

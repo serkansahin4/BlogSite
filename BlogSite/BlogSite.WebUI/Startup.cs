@@ -40,6 +40,9 @@ namespace BlogSite.WebUI
             services.AddTransient<IBlogService, BlogManager>();
             services.AddTransient<IBlogDal, EfBlogDal>();
 
+            services.AddTransient<IWriterService, WriterManager>();
+            services.AddTransient<IWriterDal, EfWriterDal>();
+
             services.AddControllersWithViews();
         }
 

@@ -161,3 +161,10 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Views\Comment\_CommentListByBlogPartial.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Views\Comment\_CommentAddPartial.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentList\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryList\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Views\Register\Index.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\BlogSite.WebUI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs

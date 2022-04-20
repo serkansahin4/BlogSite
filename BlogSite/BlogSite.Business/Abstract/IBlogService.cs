@@ -15,7 +15,7 @@ namespace BlogSite.Business.Abstract
         Task UpdateAsync(Blog blog);
         Task<List<Blog>> GetListAsync();
         Task<List<Blog>> GetListWithCategoryAsync();
-        
+        Task<List<Blog>> GetListByWriterIdAsync(int id);
         Task<Blog> GetByIdAsync(int id);
     }
 }

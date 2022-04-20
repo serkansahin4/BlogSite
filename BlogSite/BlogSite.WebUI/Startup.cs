@@ -43,6 +43,15 @@ namespace BlogSite.WebUI
             services.AddTransient<IWriterService, WriterManager>();
             services.AddTransient<IWriterDal, EfWriterDal>();
 
+            services.AddTransient<IContactService, ContactManager>();
+            services.AddTransient<IContactDal, EfContactDal>();
+
+            services.AddTransient<INewsLatterDal, EfNewsLatterDal>();
+            services.AddTransient<INewsLatterService, NewsLatterManager>();
+
+            services.AddTransient<IAboutService, AboutManager>();
+            services.AddTransient<IAboutDal, EfAboutDal>();
+
             services.AddControllersWithViews();
         }
 
@@ -58,7 +67,9 @@ namespace BlogSite.WebUI
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
+                
             }
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error/","?code={0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

@@ -44,7 +44,10 @@ namespace BlogSite.Business.Concrete
             return await _blogDal.GetAllAsync();
         }
 
-      
+        public async Task<List<Blog>> GetListByWriterIdAsync(int id)
+        {
+            return await _blogDal.GetAllAsync(x => x.WriterId == id);
+        }
 
         public async Task<List<Blog>> GetListWithCategoryAsync()
         {

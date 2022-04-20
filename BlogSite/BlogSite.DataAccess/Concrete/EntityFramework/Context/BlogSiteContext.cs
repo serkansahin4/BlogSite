@@ -20,5 +20,6 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework.Context
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Writer> Writers { get; set; }
+        public virtual DbSet<NewsLatter> NewsLatters { get; set; }
     }
 }

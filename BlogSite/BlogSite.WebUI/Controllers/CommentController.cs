@@ -1,4 +1,5 @@
 ﻿using BlogSite.Business.Abstract;
+using BlogSite.WebUI.Models.ViewModels.Comment;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,14 +19,21 @@ namespace BlogSite.WebUI.Controllers
         {
             return View();
         }
+       
+        public async Task<PartialViewResult> _CommentListByBlogPartial(int id)
+        {
+            return PartialView(await _commentService.GetListByBlogIdAsync(id));
+        }
         public PartialViewResult _CommentAddPartial()
         {
             return PartialView();
         }
 
-        public async Task<PartialViewResult> _CommentListByBlogPartial(int id)
+        [HttpPost]
+        public async Task<PartialViewResult> _CommentAddPartial(CommentVM commentVM)
         {
-            return PartialView(await _commentService.GetListByBlogIdAsync(id));
+            await _commentService.AddAsync(CommentVM.ConvertToComment(commentVM));
+            return PartialView();
         }
     }
 }

@@ -1,0 +1,29 @@
+﻿<div class="tech-btm">
+    <h4>Mail Bültenine Abone Ol</h4>
+    <p>Pellentesque dui, non felis. Maecenas male </p>
+    <form id="mailPost" action="/NewsLatter/_SubscribeMailPartial" method="post">
+        <input type="email" name="Email" placeholder="Email" required="">
+        <input type="submit" value="Subscribe">
+    </form>
+
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<script>
+    $("#mailPost").submit(function () {
+        event.preventDefault()
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:44377/NewsLatter/_SubscribeMailPartial",
+            data: $("#mailPost").serialize(),
+            success: function () {
+                swal("Mail Bültenine Abone Olundu!");
+            }
+
+        })
+    })
+
+</script>

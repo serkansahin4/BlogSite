@@ -2,6 +2,7 @@
 using BlogSite.Business.ValidationRules.WriterValidation;
 using BlogSite.WebUI.Models.ViewModels.Register;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,12 +18,11 @@ namespace BlogSite.WebUI.Controllers
         {
             _writerService = writerService;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+        [AllowAnonymous]
+        public IActionResult Index() => View();
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Index(RegisterVM registerVM)
         {
             if (ModelState.IsValid)

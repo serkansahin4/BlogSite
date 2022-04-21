@@ -3,9 +3,12 @@ using BlogSite.Business.Concrete;
 using BlogSite.DataAccess.Abstract;
 using BlogSite.DataAccess.Concrete.EntityFramework;
 using BlogSite.DataAccess.Concrete.EntityFramework.Context;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +32,27 @@ namespace BlogSite.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
+            services.AddMvc(config =>
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                             .RequireAuthenticatedUser()
+                             
+                             .Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(x =>   //Authentication iþlemlerini yapacak þemayý oluþturuyoruz. Yani, 
+                                  //Giriþ yapmasý için hangi sayfaya gidecek, çýkýþ yapýnca nereye gidecek,
+                                  //eriþim yetkisi yoksa nereye gidecek gibi þeylerin bütününü Scheme adý
+                                  //altýnda topluyoruz.
+                {
+                    x.LoginPath = "/Login/Index";
+                    x.LogoutPath = "/Login/Index";
+                    x.AccessDeniedPath = "/Error/Index";
+                });
+
             services.AddDbContext<BlogSiteContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Default")));
 
             services.AddTransient<ICategoryService, CategoryManager>();
@@ -72,9 +96,11 @@ namespace BlogSite.WebUI
             app.UseStatusCodePagesWithReExecute("/ErrorPage/Error/","?code={0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
+            
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

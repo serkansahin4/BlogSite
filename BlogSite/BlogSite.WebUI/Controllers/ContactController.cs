@@ -15,7 +15,7 @@ namespace BlogSite.WebUI.Controllers
         {
             _contactService = contactService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             return View();
         }

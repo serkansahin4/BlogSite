@@ -27,6 +27,8 @@ namespace BlogSite.WebUI.Models.ViewModels.Contact
                   Mail=contactAddVM.Mail,
                    Message=contactAddVM.Message,
                     Subject=contactAddVM.Subject,
+                     CreatedDate=contactAddVM.CreatedDate,
+                      Status=contactAddVM.Status
             };
         }
     }

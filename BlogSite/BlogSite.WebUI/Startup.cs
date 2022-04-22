@@ -103,12 +103,22 @@ namespace BlogSite.WebUI
             app.UseAuthentication();
             app.UseAuthorization();
 
+
+
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute("WriterPanel", "Writer", "Writer/{controller=Writer}/{action=Index}/{Id?}");
+            });
+            app.UseEndpoints(endpoints =>
+            {
+                
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Category}/{action=Index}/{id?}");
             });
+
+            
+
         }
     }
 }

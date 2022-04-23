@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Writer/Views/Shared/_WriterLayout.cshtml";
+}
+
+<main>
+    <section>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="btn btn-primary">Blog Ekle</a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (Blog item in Model)
+            {
+            <div class="card mt-2 ml-2" style="width: 18rem;">
+                <div style="position:absolute; display:inline; border-radius:5px;" class="p-1 bg-white mt-2 ml-2">
+                    
+                        @if (item.Status == true)
+                        {
+                    <strong class="text-success"><i class="mdi mdi-record text-success"></i>Aktif</strong>
+
+                        }
+                        else
+                        {
+                <strong class="text-danger"><i class="mdi mdi-record text-danger"></i>Pasif</strong>
+                        }
+                    
+                    
+                </div>
+
+
+
+
+
+                <img class="card-img-top" src="~/@item.BlogImage" alt="Card image cap">
+
+                <div class="card-body">
+                    <a class="card-link text-decoration-none" href="#">@item.Title</a>
+                    @if (item.Content.Length > 100)
+                    {
+                        <p class="card-text">@item.Content.Substring(0, 100) ...</p>
+                    }
+                    else
+                    {
+                        <p class="card-text">@item.Content </p>
+                    }
+
+
+                </div>
+
+                <ul class="list-group text-center">
+                    <li class="list-group-item"><a href="#" class="text-primary text-decoration-none"><i class="mdi mdi-menu"></i>Devamını Oku</a></li>
+
+                    <li class="list-group-item"><a href="#" class="text-danger text-decoration-none"> <i class="mdi mdi-delete-circle"></i>Sil </a></li>
+
+
+                </ul>
+
+
+            </div>
+            }
+
+
+
+        </div>
+    </section>
+</main>
+

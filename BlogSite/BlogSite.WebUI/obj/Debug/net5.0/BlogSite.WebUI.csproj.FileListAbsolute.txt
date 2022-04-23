@@ -181,8 +181,9 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\BlogSite.WebUI.genruntimeconfig.cache
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\WriterLayoutPartials\_WriterFooterPartial.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\WriterLayoutPartials\_WriterSidebarPartial.cshtml.g.cs
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\WriterMessageNotification\Default.cshtml.g.cs
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\WriterNotification\Default.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\_WriterLayout.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Writer\Index.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\_ViewImports.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\WriterMessageNotification\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\WriterNotification\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Blog\Index.cshtml.g.cs

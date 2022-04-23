@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace BlogSite.WebUI.Areas.Writer.ViewComponents.Writer
 {
-
     public class WriterMessageNotification : ViewComponent
     {
         public async Task<IViewComponentResult> InvokeAsync()

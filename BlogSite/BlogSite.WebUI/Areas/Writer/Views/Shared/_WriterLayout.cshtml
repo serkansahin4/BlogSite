@@ -1,9 +1,4 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -22,6 +17,7 @@
     <link rel="stylesheet" href="~/writer/assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="~/writer/assets/images/favicon.ico" />
+    <link href="~/web/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -77,14 +73,14 @@
                             <i class="mdi mdi-email-outline"></i>
                             <span class="count-symbol bg-warning"></span>
                         </a>
-                       @await Component.InvokeAsync("WriterMessageNotification") 
+                        @await Component.InvokeAsync("WriterMessageNotification")
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="~/writer/#" data-toggle="dropdown">
                             <i class="mdi mdi-bell-outline"></i>
                             <span class="count-symbol bg-danger"></span>
                         </a>
-                        @await Component.InvokeAsync("WriterNotification") 
+                        @await Component.InvokeAsync("WriterNotification")
                     </li>
                     <li class="nav-item nav-logout d-none d-lg-block">
                         <a class="nav-link" href="~/writer/#">
@@ -120,7 +116,7 @@
             </div>
             <!-- main-panel ends -->
         </div>
-        
+
         <!-- page-body-wrapper ends -->
     </div>
 
@@ -149,6 +145,7 @@
     <!-- Custom js for this page -->
     <script src="~/writer/assets/js/dashboard.js"></script>
     <script src="~/writer/assets/js/todolist.js"></script>
+    
     <!-- End custom js for this page -->
 </body>
 </html>

@@ -187,3 +187,6 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\WriterMessageNotification\Default.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\WriterNotification\Default.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Blog\Index.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Blog\AddBlog.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Blog\EditBlog.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Dashboard\Index.cshtml.g.cs

@@ -12,11 +12,13 @@ namespace BlogSite.Business.Abstract
         Task AddAsync(Blog blog);
         Task DeleteAsync(Blog blog);
         Task DeleteAsync(int id);
+        Task StatusUpdateAsync(int? id);
         Task UpdateAsync(Blog blog);
         Task<List<Blog>> GetListAsync();
         Task<List<Blog>> GetListWithCategoryAsync();
         Task<List<Blog>> GetListByWriterIdAsync(int id);
         Task<IEnumerable<Blog>> GetListThreeBlogAsync();
         Task<Blog> GetByIdAsync(int id);
+        Task<List<Blog>> GetListWithCategoryByWriterId(int writerId);
     }
 }

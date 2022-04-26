@@ -1,0 +1,43 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Areas/Writer/Views/Shared/_WriterLayout.cshtml";
+}
+
+<form method="post" asp-action="EditBlog" asp-controller="Blog" asp-area="Writer">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="WriterId" />
+    <div class="form-group">
+        <label>Blog Başlığı</label>
+        <input type="text" class="form-control" asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Blog Resmi</label>
+        <input type="text" class="form-control" asp-for="BlogImage" />
+        <span asp-validation-for="BlogImage"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Blog Thumbnail</label>
+        <input type="text" class="form-control" asp-for="BlogThumbnailImage" />
+        <span asp-validation-for="BlogThumbnailImage"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CategoryId"></label>
+        <select name="CategoryId" asp-items="ViewBag.categoryList as IEnumerable<SelectListItem>" class="form-control">
+        </select>
+        <span asp-validation-for="CategoryId"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Blog İçeriği</label>
+        <textarea asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content"></span>
+    </div>
+    <button class="btn btn-primary">Güncelle</button>
+</form>
+

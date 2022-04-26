@@ -18,6 +18,7 @@ namespace BlogSite.Business.Concrete
         }
         public async Task AddAsync(Blog blog)
         {
+            
             await _blogDal.InsertAsync(blog);
         }
 
@@ -58,6 +59,28 @@ namespace BlogSite.Business.Concrete
         public async Task<List<Blog>> GetListWithCategoryAsync()
         {
             return await _blogDal.GetListWithCategoryAsync();
+        }
+
+        public async Task<List<Blog>> GetListWithCategoryByWriterId(int writerId)
+        {
+            return await _blogDal.GetListWithCategoryByWriterId(writerId);
+        }
+
+        public async Task StatusUpdateAsync(int? id)
+        {
+            Blog blog = await _blogDal.GetAsync(x => x.Id == id);
+            if (blog!=null)
+            {
+                if (blog.Status)
+                {
+                    blog.Status = false;
+                }
+                else
+                {
+                    blog.Status = true;
+                }
+                await _blogDal.UpdateAsync(blog);
+            }
         }
 
         public async Task UpdateAsync(Blog blog)

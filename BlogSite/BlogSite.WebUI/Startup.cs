@@ -75,7 +75,6 @@ namespace BlogSite.WebUI
 
             services.AddTransient<IAboutService, AboutManager>();
             services.AddTransient<IAboutDal, EfAboutDal>();
-
             services.AddControllersWithViews();
         }
 
@@ -99,19 +98,16 @@ namespace BlogSite.WebUI
             app.UseSession();
             app.UseRouting();
 
-            
             app.UseAuthentication();
             app.UseAuthorization();
 
-
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapAreaControllerRoute("WriterPanel", "Writer", "Writer/{controller=Writer}/{action=Index}/{Id?}");
+                endpoints.MapAreaControllerRoute("WriterPanel", "Writer", "writer/{controller=Writer}/{action=Index}/{id?}");
+                
             });
             app.UseEndpoints(endpoints =>
             {
-                
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Category}/{action=Index}/{id?}");

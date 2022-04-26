@@ -1,0 +1,39 @@
+﻿@model AddBlogVM
+@{
+    ViewData["Title"] = "AddBlog";
+    Layout = "~/Areas/Writer/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h1>AddBlog</h1>
+<form method="post" asp-action="AddBlog" asp-controller="Blog" asp-area="Writer">
+    <div class="form-group">
+        <label asp-for="CategoryId"></label>
+        <select name="CategoryId" asp-items="ViewBag.categoryList as IEnumerable<SelectListItem>" class="form-control"> 
+        </select>
+        <span asp-validation-for="CategoryId"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="WriterId"></label>
+        <input type="text" class="form-control" asp-for="WriterId" />
+        <span asp-validation-for="WriterId"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BlogImage"></label>
+        <input type="file" class="form-control" asp-for="BlogImage" />
+        <span asp-validation-for="BlogImage"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input type="text" class="form-control" asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Content"></label>
+        <input type="text" class="form-control" asp-for="Content" />
+        <span asp-validation-for="Content"></span>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary">Blog Ekle</button>
+    </div>
+</form>
+

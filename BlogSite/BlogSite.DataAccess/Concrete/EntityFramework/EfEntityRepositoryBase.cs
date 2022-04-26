@@ -25,7 +25,6 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework
             await _context.SaveChangesAsync();
             
         }
-
         public async Task DeleteAsync(TEntity entity)
         {
             _dbSet.Remove(entity);

@@ -15,13 +15,13 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="~/writer/index.html">
+            <a class="nav-link" asp-action="Index" asp-controller="Dashboard" asp-area="Writer">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="~/writer/pages/icons/mdi.html">
+            <a class="nav-link" asp-action="Index" asp-controller="Writer" asp-area="Writer">
                 <span class="menu-title">Profilim</span>
                 <i class="mdi mdi-contacts menu-icon"></i>
             </a>
@@ -38,9 +38,15 @@
                 <i class="mdi mdi-chart-bar menu-icon"></i>
             </a>
         </li>
+       <li class="nav-item">
+            <a class="nav-link" asp-action="AllNotification" asp-controller="Notification" asp-area="Writer">
+                <span class="menu-title">Bildirimler</span>
+                <i class="mdi mdi-call-merger menu-icon"></i>
+            </a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="~/writer/pages/tables/basic-table.html">
-                <span class="menu-title">Mesajlar</span>
+                <span class="menu-title">Bildirimler</span>
                 <i class="mdi mdi-message menu-icon"></i>
             </a>
         </li>

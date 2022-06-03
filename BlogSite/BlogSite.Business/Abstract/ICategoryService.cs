@@ -15,5 +15,6 @@ namespace BlogSite.Business.Abstract
         Task UpdateAsync(Category category);
         Task<List<Category>> GetListAsync();
         Task<Category> GetByIdAsync(int id);
+        int AllCategoryCount();
     }
 }

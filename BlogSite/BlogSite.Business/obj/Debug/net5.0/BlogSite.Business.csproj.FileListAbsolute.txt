@@ -1,6 +1,5 @@
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Debug\net5.0\BlogSite.Business.deps.json
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Debug\net5.0\BlogSite.Business.dll
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Debug\net5.0\ref\BlogSite.Business.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Debug\net5.0\BlogSite.Business.pdb
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Debug\net5.0\BlogSite.DataAccess.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Debug\net5.0\BlogSite.Entities.dll
@@ -15,3 +14,4 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Debug\net5.0\BlogSite.Business.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Debug\net5.0\ref\BlogSite.Business.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Debug\net5.0\BlogSite.Business.pdb
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Debug\net5.0\refint\BlogSite.Business.dll

@@ -21,6 +21,11 @@ namespace BlogSite.Business.Concrete
             await _categoryDal.InsertAsync(category);
         }
 
+        public int AllCategoryCount()
+        {
+            return _categoryDal.GetAllAsync().Result.Count;
+        }
+
         public async Task DeleteAsync(Category category)
         {
             await _categoryDal.DeleteAsync(category);

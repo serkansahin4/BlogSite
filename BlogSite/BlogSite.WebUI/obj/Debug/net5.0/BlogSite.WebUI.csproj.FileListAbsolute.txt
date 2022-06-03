@@ -6,7 +6,6 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\BlogSite.WebUI.runtimeconfig.json
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\BlogSite.WebUI.runtimeconfig.dev.json
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\BlogSite.WebUI.dll
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\ref\BlogSite.WebUI.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\BlogSite.WebUI.pdb
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\BlogSite.WebUI.Views.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\bin\Debug\net5.0\BlogSite.WebUI.Views.pdb
@@ -135,7 +134,6 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\BlogSite.WebUI.RazorAssemblyInfo.cache
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\BlogSite.WebUI.RazorAssemblyInfo.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\staticwebassets\BlogSite.WebUI.StaticWebAssets.Manifest.cache
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\staticwebassets\BlogSite.WebUI.StaticWebAssets.xml
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\scopedcss\bundle\BlogSite.WebUI.styles.css
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\BlogSite.WebUI.TagHelpers.input.cache
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\BlogSite.WebUI.TagHelpers.output.cache
@@ -190,3 +188,9 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Blog\AddBlog.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Blog\EditBlog.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\BlogListDashboard\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\CategoryListDashboard\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Writer\WriterAdd.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\refint\BlogSite.WebUI.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\NotificationList\Default.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Notification\AllNotification.cshtml.g.cs

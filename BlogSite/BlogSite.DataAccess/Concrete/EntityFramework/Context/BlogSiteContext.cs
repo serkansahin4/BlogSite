@@ -21,5 +21,8 @@ namespace BlogSite.DataAccess.Concrete.EntityFramework.Context
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Writer> Writers { get; set; }
         public virtual DbSet<NewsLatter> NewsLatters { get; set; }
+        public virtual DbSet<BlogRayting> BlogRaytings { get; set; }
+        public virtual DbSet<Notification> Notifications { get; set; }
+        public virtual DbSet<Message> Messages{ get; set; }
     }
 }

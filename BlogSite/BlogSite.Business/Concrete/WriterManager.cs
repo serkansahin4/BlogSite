@@ -46,9 +46,9 @@ namespace BlogSite.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public Task UpdateAsync(Writer writer)
+        public async Task UpdateAsync(Writer writer)
         {
-            throw new NotImplementedException();
+            await _writerDal.UpdateAsync(writer);
         }
     }
 }

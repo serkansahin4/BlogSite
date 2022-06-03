@@ -2,7 +2,6 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAcces
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\BlogSite.DataAccess.runtimeconfig.json
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\BlogSite.DataAccess.runtimeconfig.dev.json
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\BlogSite.DataAccess.dll
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\ref\BlogSite.DataAccess.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\BlogSite.DataAccess.pdb
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\BlogSite.Entities.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\bin\Debug\net5.0\BlogSite.Entities.pdb
@@ -16,3 +15,4 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAcces
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\obj\Debug\net5.0\ref\BlogSite.DataAccess.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\obj\Debug\net5.0\BlogSite.DataAccess.pdb
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\obj\Debug\net5.0\BlogSite.DataAccess.genruntimeconfig.cache
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.DataAccess\obj\Debug\net5.0\refint\BlogSite.DataAccess.dll

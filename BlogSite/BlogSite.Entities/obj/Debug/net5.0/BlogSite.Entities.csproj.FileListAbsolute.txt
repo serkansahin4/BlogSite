@@ -1,6 +1,5 @@
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\bin\Debug\net5.0\BlogSite.Entities.deps.json
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\bin\Debug\net5.0\BlogSite.Entities.dll
-C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\bin\Debug\net5.0\ref\BlogSite.Entities.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\bin\Debug\net5.0\BlogSite.Entities.pdb
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\obj\Debug\net5.0\BlogSite.Entities.csproj.AssemblyReference.cache
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\obj\Debug\net5.0\BlogSite.Entities.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,3 +9,4 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\obj\Debug\net5.0\BlogSite.Entities.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\obj\Debug\net5.0\ref\BlogSite.Entities.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\obj\Debug\net5.0\BlogSite.Entities.pdb
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Entities\obj\Debug\net5.0\refint\BlogSite.Entities.dll

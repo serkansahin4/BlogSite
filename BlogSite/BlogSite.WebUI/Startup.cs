@@ -37,7 +37,6 @@ namespace BlogSite.WebUI
             {
                 var policy = new AuthorizationPolicyBuilder()
                              .RequireAuthenticatedUser()
-                             
                              .Build();
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
@@ -55,6 +54,9 @@ namespace BlogSite.WebUI
 
             services.AddDbContext<BlogSiteContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Default")));
 
+            services.AddTransient<IMessageService, MessageManager>();
+            services.AddTransient<IMessageDal, EfMessageDal>();
+
             services.AddTransient<ICategoryService, CategoryManager>();
             services.AddTransient<ICategoryDal, EfCategoryDal>();
 
@@ -69,6 +71,9 @@ namespace BlogSite.WebUI
 
             services.AddTransient<IContactService, ContactManager>();
             services.AddTransient<IContactDal, EfContactDal>();
+
+            services.AddTransient<INotificationDal, EfNotificationDal>();
+            services.AddTransient<INotificationService, NotificationManager>();
 
             services.AddTransient<INewsLatterDal, EfNewsLatterDal>();
             services.AddTransient<INewsLatterService, NewsLatterManager>();

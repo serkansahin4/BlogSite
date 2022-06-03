@@ -22,6 +22,16 @@ namespace BlogSite.Business.Concrete
             await _blogDal.InsertAsync(blog);
         }
 
+        public int BlogCount()
+        {
+           return _blogDal.GetAllAsync().Result.Count();
+        }
+
+        public int BlogCountWithWriterId(int id)
+        {
+            return _blogDal.GetAllAsync(x=>x.WriterId==id).Result.Count();
+        }
+
         public async Task DeleteAsync(Blog blog)
         {
             await _blogDal.DeleteAsync(blog);

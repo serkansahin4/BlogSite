@@ -1,0 +1,17 @@
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.Business.deps.json
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.Business.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.Business.pdb
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.DataAccess.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.Entities.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.DataAccess.pdb
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\bin\Release\net5.0\BlogSite.Entities.pdb
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.csproj.AssemblyReference.cache
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.AssemblyInfoInputs.cache
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.AssemblyInfo.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.csproj.CoreCompileInputs.cache
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.csproj.CopyComplete
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\refint\BlogSite.Business.dll
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\BlogSite.Business.pdb
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.Business\obj\Release\net5.0\ref\BlogSite.Business.dll

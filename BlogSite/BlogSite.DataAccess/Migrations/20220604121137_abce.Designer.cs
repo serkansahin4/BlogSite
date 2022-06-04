@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogSite.DataAccess.Migrations
 {
     [DbContext(typeof(BlogSiteContext))]
-    [Migration("20220603180141_migration_notification_added")]
-    partial class migration_notification_added
+    [Migration("20220604121137_abce")]
+    partial class abce
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -198,6 +198,40 @@ namespace BlogSite.DataAccess.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("BlogSite.Entities.Concrete.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Details")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ReceiverWriterId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SenderWriterId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReceiverWriterId");
+
+                    b.HasIndex("SenderWriterId");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("BlogSite.Entities.Concrete.NewsLatter", b =>
                 {
                     b.Property<int>("Id")
@@ -222,6 +256,9 @@ namespace BlogSite.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Color")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -303,6 +340,21 @@ namespace BlogSite.DataAccess.Migrations
                     b.Navigation("Blog");
                 });
 
+            modelBuilder.Entity("BlogSite.Entities.Concrete.Message", b =>
+                {
+                    b.HasOne("BlogSite.Entities.Concrete.Writer", "ReceiverWriter")
+                        .WithMany("ReceiveMessages")
+                        .HasForeignKey("ReceiverWriterId");
+
+                    b.HasOne("BlogSite.Entities.Concrete.Writer", "SenderWriter")
+                        .WithMany("SenderMessages")
+                        .HasForeignKey("SenderWriterId");
+
+                    b.Navigation("ReceiverWriter");
+
+                    b.Navigation("SenderWriter");
+                });
+
             modelBuilder.Entity("BlogSite.Entities.Concrete.Blog", b =>
                 {
                     b.Navigation("Comments");
@@ -316,6 +368,10 @@ namespace BlogSite.DataAccess.Migrations
             modelBuilder.Entity("BlogSite.Entities.Concrete.Writer", b =>
                 {
                     b.Navigation("Blogs");
+
+                    b.Navigation("ReceiveMessages");
+
+                    b.Navigation("SenderMessages");
                 });
 #pragma warning restore 612, 618
         }

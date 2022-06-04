@@ -27,9 +27,14 @@ namespace BlogSite.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public async Task<List<Message>> GetInboxWithByWriterAsync(string p)
+        public async Task<Message> GetById(int id)
         {
-            return await _messageDal.GetAllAsync(x => x.Receiver == p);
+            return await _messageDal.GetAsync(x => x.Id == id);
+        }
+
+        public async Task<List<Message>> GetInboxWithByWriterAsync(int id)
+        {
+            return await _messageDal.GetListWithMessageByWriterId(id);
 
         }
 

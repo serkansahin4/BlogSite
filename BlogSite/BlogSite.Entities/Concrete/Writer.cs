@@ -18,5 +18,7 @@ namespace BlogSite.Entities.Concrete
         public string Password { get; set; }
         public bool Status { get; set; }
         public ICollection<Blog> Blogs { get; set; }
+        public ICollection<Message> SenderMessages { get; set; }
+        public ICollection<Message> ReceiveMessages { get; set; }
     }
 }

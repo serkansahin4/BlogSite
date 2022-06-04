@@ -11,11 +11,13 @@ namespace BlogSite.Entities.Concrete
     {
         [Key]
         public int Id { get; set; }
-        public string Sender { get; set; }
-        public string Receiver { get; set; }
+        public int? SenderWriterId { get; set; }
+        public int? ReceiverWriterId { get; set; }
         public string Subject { get; set; }
         public string Details { get; set; }
         public DateTime Date { get; set; }
         public bool Status { get; set; }
+        public Writer SenderWriter { get; set; }
+        public Writer ReceiverWriter { get; set; }
     }
 }

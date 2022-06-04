@@ -209,11 +209,11 @@ namespace BlogSite.DataAccess.Migrations
                     b.Property<string>("Details")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Receiver")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("ReceiverWriterId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Sender")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("SenderWriterId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
@@ -222,6 +222,10 @@ namespace BlogSite.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ReceiverWriterId");
+
+                    b.HasIndex("SenderWriterId");
 
                     b.ToTable("Messages");
                 });
@@ -334,6 +338,21 @@ namespace BlogSite.DataAccess.Migrations
                     b.Navigation("Blog");
                 });
 
+            modelBuilder.Entity("BlogSite.Entities.Concrete.Message", b =>
+                {
+                    b.HasOne("BlogSite.Entities.Concrete.Writer", "ReceiverWriter")
+                        .WithMany("ReceiveMessages")
+                        .HasForeignKey("ReceiverWriterId");
+
+                    b.HasOne("BlogSite.Entities.Concrete.Writer", "SenderWriter")
+                        .WithMany("SenderMessages")
+                        .HasForeignKey("SenderWriterId");
+
+                    b.Navigation("ReceiverWriter");
+
+                    b.Navigation("SenderWriter");
+                });
+
             modelBuilder.Entity("BlogSite.Entities.Concrete.Blog", b =>
                 {
                     b.Navigation("Comments");
@@ -347,6 +366,10 @@ namespace BlogSite.DataAccess.Migrations
             modelBuilder.Entity("BlogSite.Entities.Concrete.Writer", b =>
                 {
                     b.Navigation("Blogs");
+
+                    b.Navigation("ReceiveMessages");
+
+                    b.Navigation("SenderMessages");
                 });
 #pragma warning restore 612, 618
         }

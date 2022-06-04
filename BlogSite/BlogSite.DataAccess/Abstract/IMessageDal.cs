@@ -9,5 +9,6 @@ namespace BlogSite.DataAccess.Abstract
 {
     public interface IMessageDal:IRepository<Message>
     {
+        Task<List<Message>> GetListWithMessageByWriterId(int writerId);
     }
 }

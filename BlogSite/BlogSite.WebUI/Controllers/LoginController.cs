@@ -40,12 +40,16 @@ namespace BlogSite.WebUI.Controllers
                 {
                     var claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.Email,writer.Email)
+                        new Claim(ClaimTypes.Name,writer.Email)
                     };
-                    var userIdentity = new ClaimsIdentity(claims, "a");
-                    ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
+                    var userIdentity = new ClaimsIdentity(claims,"a");
+                    
+                    ClaimsPrincipal principal = new ClaimsPrincipal();
+                    principal.AddIdentity(userIdentity);
+                    
                     await HttpContext.SignInAsync(principal);
-                    return RedirectToAction("Index", "Writer");
+                    
+                    return RedirectToAction("Index", "Writer", new { @area = "Writer" });
                 }
                 ViewBag.SignControlMessage = "Kullanıcı Adı Veya Parolanız Yanlış.";
                 return View();

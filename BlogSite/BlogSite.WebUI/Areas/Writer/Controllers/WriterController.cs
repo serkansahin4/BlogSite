@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace BlogSite.WebUI.Areas.Writer.Controllers
 {
-    [AllowAnonymous]
     [Area("Writer")]
+    [Authorize]
     public class WriterController : Controller
     {
         private readonly IWriterService _writerService;
@@ -26,7 +26,8 @@ namespace BlogSite.WebUI.Areas.Writer.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(_writerService.GetByEmailAsync("serkan@hotmail.com").Result);
+            
+            return View(_writerService.GetByEmailAsync(User.Identity.Name).Result);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -56,6 +57,13 @@ namespace BlogSite.WebUI.Areas.Writer.Controllers
         [HttpGet]
         public async Task<IActionResult> WriterAdd()
         {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult WriterIndex()
+        {
+            var us = User.Identity.Name;
+            ViewBag.UserName = us;
             return View();
         }
 

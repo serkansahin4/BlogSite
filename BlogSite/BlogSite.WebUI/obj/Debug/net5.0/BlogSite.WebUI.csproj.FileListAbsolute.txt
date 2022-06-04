@@ -194,3 +194,6 @@ C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\refint\BlogSite.WebUI.dll
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Shared\Components\NotificationList\Default.cshtml.g.cs
 C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Notification\AllNotification.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Message\InBox.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Message\MessageDetails.cshtml.g.cs
+C:\Users\Serkan\Desktop\GİTHUB REPOLARIM\BlogSitesi\BlogSite\BlogSite.WebUI\obj\Debug\net5.0\Razor\Areas\Writer\Views\Writer\WriterIndex.cshtml.g.cs

@@ -14,6 +14,9 @@ namespace BlogSite.Business.Abstract
         Task StatusUpdateAsync(int? id);
         Task UpdateAsync(Message message);
         Task<List<Message>> GetListAsync();
-        Task<List<Message>> GetInboxWithByWriterAsync(string p);
+        Task<Message> GetById(int id);
+        Task<List<Message>> GetInboxWithByWriterAsync(int id);
+        
+        
     }
 }

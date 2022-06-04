@@ -1,0 +1,20 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Areas/Writer/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h1>MessageDetails</h1>
+
+<label>Mesaj Id</label>
+<label>@Model.Id</label>
+<br />
+<label>Mesaj Başlığı</label>
+<label>@Model.Subject</label>
+<br />
+<label>Mesaj İçeriği</label>
+<label>@Model.Details</label>
+
+<br />
+<button class="btn btn-success">Mesajlara Dön</button>
+

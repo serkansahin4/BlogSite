@@ -17,9 +17,9 @@ namespace BlogSite.WebUI.Areas.Writer.ViewComponents.Writer
     
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            string p;
-            p = "serkana607@gmail.com";
-            var values = await _messageService.GetInboxWithByWriterAsync(p);
+            int id;
+            id = 1;
+            var values = await _messageService.GetInboxWithByWriterAsync(id);
             return View(values);
         }
     }
